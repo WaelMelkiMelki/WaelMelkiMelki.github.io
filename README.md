@@ -1,6 +1,6 @@
 # Wael Melki — AI/ML & ICT Engineering Portfolio
 
-A responsive, static React portfolio with a premium dark design, built for international recruiters and engineering teams.
+A responsive, static React portfolio with a light design with white cards, slate text, and violet/teal accents, built for international recruiters and engineering teams.
 
 **Target URL:** https://waelmelkimelki.github.io/
 
