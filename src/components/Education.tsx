@@ -1,0 +1,4 @@
+import { GraduationCap, BookOpen } from 'lucide-react'
+import { profile, training } from '../data/portfolio'
+import { Section } from './Section'
+export default function Education() { return <Section id="education" number="05" label="FOUNDATIONS & LEARNING" title="An engineer’s mindset. A learner’s curiosity."><div className="education-grid"><article className="education-card"><GraduationCap size={30}/><p className="eyebrow">EDUCATION</p><h3>{profile.university}</h3><p>{profile.degree}</p><span className="muted">Tunis, Tunisia</span></article><div className="training"><h3><BookOpen size={20}/> Selected training</h3>{training.map(item => <div className="training-item" key={item.name}><span>{item.name}</span><small>{item.provider}</small></div>)}</div></div></Section> }
