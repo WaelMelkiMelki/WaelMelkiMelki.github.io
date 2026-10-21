@@ -55,7 +55,7 @@ Vite uses `base: '/'` because this is a user site, not a project subdirectory. N
 
 Edit `src/data/portfolio.ts`. No UI code is needed to change project descriptions, skills or experience. All current project repository links were checked against the GitHub account.
 
-`profile.linkedin` and `profile.resume` intentionally start empty; their links are omitted rather than shown as dead buttons. Add a verified full LinkedIn URL. For a resume, place an approved public PDF in `public/resume.pdf`, then set `resume: '/resume.pdf'`. Review its personal information before publication. The contact email was verified from the connected GitHub profile.
+The owner supplied LinkedIn URL, professional portrait and LaTeX CV on 21 October 2026. The public resume is `public/resume/Wael_Melki_CV.pdf`; its editable source is `docs/resume/Wael_Melki_CV.tex`. Rebuild with pdfLaTeX and visually review both pages before replacing the PDF. Profile links live in `src/data/portfolio.ts`.
 
 Training names are supplied by the owner, presented as training rather than independently verified certifications. Credential URLs, dates, expertise levels and performance claims are not fabricated. Add credential links only after verification.
 
