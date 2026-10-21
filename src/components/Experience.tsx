@@ -1,0 +1,4 @@
+import { ArrowUpRight } from 'lucide-react'
+import { experiences } from '../data/portfolio'
+import { Section } from './Section'
+export default function Experience() { return <Section id="experience" number="02" label="PRACTICAL EXPERIENCE" title="Engineering, in practice."><div className="timeline">{experiences.map((item, i) => <article className="experience" key={item.company}><div className="experience-company"><span className="mono">0{i+1}</span><h3>{item.company}</h3><span className="muted">Engineering experience</span></div><div><h4>{item.project}</h4><p className="body-copy">{item.description}</p><div className="tags">{item.stack.map(tag => <span key={tag}>{tag}</span>)}</div><a className="text-link" href={'#project-' + (i === 0 ? 'fwa' : 'rf')}>Explore related project <ArrowUpRight size={16}/></a></div></article>)}</div></Section> }
