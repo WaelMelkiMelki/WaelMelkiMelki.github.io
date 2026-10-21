@@ -1,0 +1,110 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[a4paper,left=16mm,right=16mm,top=13mm,bottom=13mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{needspace}
+\usepackage{tabularx}
+\definecolor{navy}{HTML}{123449}
+\definecolor{accent}{HTML}{087E90}
+\definecolor{ink}{HTML}{21323F}
+\definecolor{gray}{HTML}{61717C}
+\definecolor{line}{HTML}{C8D9DE}
+\hypersetup{colorlinks=true,urlcolor=accent,linkcolor=accent,pdfauthor={Wael Melki},pdftitle={Wael Melki - Data Science, AI, Machine Learning Engineer},pdfsubject={Multidisciplinary engineering CV}}
+\renewcommand{\familydefault}{\sfdefault}
+\color{ink}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{1.7em}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[R]{\fontsize{8}{9}\selectfont\color{gray}Wael Melki \enspace\textbar\enspace \thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{14pt}
+\setlist[itemize]{label={\textcolor{accent}{\raisebox{0.2ex}{\tiny\textbullet}}},leftmargin=1.16em,itemsep=2.1pt,topsep=2.6pt,partopsep=0pt,parsep=0pt}
+\titleformat{\section}{\needspace{5\baselineskip}\fontsize{10.6}{12}\selectfont\bfseries\color{navy}}{}{0pt}{\MakeUppercase}[\vspace{2pt}\color{line}\titlerule]
+\titlespacing*{\section}{0pt}{11pt}{6pt}
+\newcommand{\job}[4]{%
+  \needspace{6\baselineskip}%
+  \textbf{\color{navy}#1}\hfill{\fontsize{8.8}{10}\selectfont\color{gray}#2}\par
+  {\fontsize{9.25}{11}\selectfont\textit{#3}\hfill\color{gray}#4}\par
+}
+\newcommand{\project}[3]{%
+  \needspace{5\baselineskip}%
+  {\bfseries\color{navy}#1}\hfill{\fontsize{8.3}{10}\selectfont\color{gray}#2}\par
+  #3\par\vspace{5pt}
+}
+\begin{document}
+\begin{center}
+  {\fontsize{25}{27}\selectfont\bfseries\color{navy}WAEL MELKI}\par
+  \vspace{3pt}
+  {\fontsize{10.6}{12}\selectfont\bfseries\color{accent}DATA SCIENTIST \textbar\ DATA ANALYST \textbar\ AI / ML ENGINEER}\par
+  \vspace{6pt}
+  {\fontsize{9}{11}\selectfont Ariana, Tunis, Tunisia \quad\textbar\quad +216 95 351 801 \quad\textbar\quad \href{mailto:wael.melki@supcom.tn}{wael.melki@supcom.tn}}\par
+  \vspace{3pt}
+  {\fontsize{8.9}{11}\selectfont \href{https://www.linkedin.com/in/wael-melki-097b56202/}{linkedin.com/in/wael-melki-097b56202} \quad\textbar\quad \href{https://github.com/WaelMelkiMelki}{github.com/WaelMelkiMelki} \quad\textbar\quad \href{https://codeforces.com/profile/wael_melki}{Codeforces}}\par
+\end{center}
+\vspace{-2pt}
+
+\section{Professional Profile}
+ICT engineer from \textbf{SUP'COM} (graduated with \textbf{Tr\`es bien}) specializing in the intersection of \textbf{data science, applied machine learning, AI engineering, business analytics and software development}. Built end-to-end systems spanning multi-source data integration, SQL analytics, explainable predictive models, BI dashboards, MLOps and RF simulation. At Huawei, developed a 5G planning decision pipeline covering \textbf{12,412 subscribers and 731 radio cells}; combines quantitative rigor with software engineering and domain-aware decision making.
+
+\section{Professional Experience}
+\job{Huawei North Africa}{Feb 2026 -- Jul 2026}{Final-Year Engineering Intern -- AI-Driven 5G Fixed Wireless Access Planning}{Tunis, Tunisia}
+\begin{itemize}
+ \item Architected a \textbf{Python/PostgreSQL} decision pipeline consolidating CRM, customer usage, service consumption, coverage and RAN KPIs across \textbf{5 data sources}; assembled a reliable \textbf{50-column} analytical dataset for \textbf{12,412 subscribers} and \textbf{731 radio cells}.
+ \item Implemented data profiling, deduplication, outlier checks and referential integrity controls; identified and resolved systematic quality anomalies before feature engineering and model training.
+ \item Built \textbf{explainable FWA eligibility scoring}, \textbf{K-Prototypes} customer segmentation and a calibrated \textbf{XGBoost} churn classifier (held-out ROC-AUC \textbf{\textasciitilde{}0.71}) to drive offer recommendations and customer prioritization.
+ \item Modeled radio-network feasibility using \textbf{PRB-based capacity simulation}; identified \textbf{2,629 eligible subscribers} and \textbf{658 priority contacts}, with projected peak load \textbf{68.26\%}, below the \textbf{80\%} operational ceiling.
+ \item Produced an actionable, database-backed campaign shortlist and decision-support outputs joining commercial value, churn risk and engineering constraints. \textit{Stack: Python, SQL, Pandas, scikit-learn, XGBoost, PostgreSQL, Power BI, Git.}
+\end{itemize}
+\vspace{2pt}
+\job{NetData Innovation}{Jul 2025 -- Aug 2025}{Engineering Intern -- 3D RF Coverage Simulation and Performance Optimization}{Remote, France}
+\begin{itemize}
+ \item Developed a Python/C++ desktop simulation application for \textbf{Wi-Fi/5G radio coverage} in 3D scenes, combining configurable antennas, propagation analysis and interactive \textbf{PyQt6 / PyVista / VTK} visualization.
+ \item Profiled and optimized computational workloads using \textbf{Octree spatial structures}, multiprocessing and C++/Python refactoring; \textbf{reduced processing time by 70\%} in reported tests.
+\end{itemize}
+
+\job{Tunisie Telecom}{First year}{Human Development Internship -- Stage de formation humaine}{Tunisia}
+\vspace{3pt}
+\section{Technical Toolkit}
+{\fontsize{9.35}{11.8}\selectfont
+\textbf{Programming \& analytics:} Python, SQL, C++, MATLAB; Pandas, NumPy, data cleaning, EDA, ETL, feature engineering, data validation.\par\vspace{3pt}
+\textbf{AI \& ML:} scikit-learn, XGBoost, PyTorch, K-Prototypes, Random Forest, SVM, Isolation Forest, HDBSCAN, SHAP; classification, clustering, anomaly detection, model evaluation.\par\vspace{3pt}
+\textbf{Data \& BI:} PostgreSQL, SQL Server, relational modeling, star schema, Power Query, Power BI, DAX, dashboards, KPI reporting.\par\vspace{3pt}
+\textbf{ML engineering:} MLflow, ZenML, DVC, Evidently, MinIO, Docker / Docker Compose, Git, Linux, reproducible pipelines, drift monitoring.\par\vspace{3pt}
+\textbf{Simulation \& signals:} 5G FWA, LTE, RAN KPI, PRB capacity, RF propagation, signal/image processing, OpenCV, VTK, PyVista, IoT.\par
+}
+
+\newpage
+\vspace*{6pt}
+{\fontsize{11}{13}\selectfont\bfseries\color{navy}WAEL MELKI}\hfill{\fontsize{9}{11}\selectfont\color{gray}PROJECTS, EDUCATION \& QUALIFICATIONS}\par
+\vspace{2pt}\color{line}\hrule\color{ink}
+
+\section{Selected Engineering \& Data Projects}
+\project{CIFAR-10 MLOps Training and Monitoring Platform}{\href{https://github.com/WaelMelkiMelki/The-OpenMLOps-Challenge-Sup-erSonic}{View repository}}{Designed reproducible computer-vision training workflows orchestrated with \textbf{ZenML} and \textbf{MLflow} for experiment tracking and model registry. Versioned datasets with \textbf{DVC}, used \textbf{MinIO / PostgreSQL} for artifact and metadata storage, and containerized services with \textbf{Docker Compose}; integrated \textbf{Evidently} drift checks and guarded retraining.}
+\project{Energy Time-Series Analytics and Anomaly Detection}{\href{https://github.com/WaelMelkiMelki/Pipeline-d-Analyse-pour-Donn-es-de-Consommation-d-nergie-Ondelettes-Isolation-Forest-et-HDBSCAN}{View repository}}{Collaborated on a signal-processing and unsupervised-learning pipeline for energy-consumption analysis. Applied \textbf{coif5 wavelet} compression, detected unusual usage profiles with \textbf{Isolation Forest / HDBSCAN}, and exposed interactive results through a \textbf{Streamlit} analytical interface.}
+\project{AdventureWorks Sales Analytics -- Power BI}{\href{https://github.com/WaelMelkiMelki/End-to-End-Sales-Analytics-Dashboard-AdventureWorks-Power-BI-}{View repository}}{Created an analytics workflow joining \textbf{SQL Server} and CSV inputs, \textbf{Power Query} transformation, a dimensional \textbf{star schema} and \textbf{DAX} measures. Built interactive reporting to analyze sales revenue, margins, growth and year-over-year KPIs for business stakeholders.}
+\project{Non-Invasive Diabetes Detection -- Multimodal ML}{Academic research project}{Co-developed a research prototype using \textbf{ECG and respiratory signals}: frequency filtering, peak detection, heart-rate variability and breathing-rate feature extraction. Evaluated \textbf{SVM / Random Forest} models with subject-aware validation and combined their probabilities using late fusion; small-sample research, not a clinical diagnostic system.}
+\project{Real-Time Object Tracking -- Computer Vision}{Academic project}{Implemented and compared object-tracking algorithms in \textbf{Python / OpenCV}, examining performance in dynamic scenes and applying image-processing and algorithmic evaluation techniques.}
+\project{RF Design and Connected-IoT Prototypes}{Academic projects}{Designed and simulated a \textbf{T-network RF attenuator} in \textbf{ADS}. Developed an \textbf{ESP32 / Arduino} fire/incident detection prototype that triggers automatic \textbf{ntfy} notifications, combining sensing, embedded software and connected services.}
+\project{Statistical Voice Conversion -- Digital Signal Processing}{Academic project}{Transformed speech characteristics through \textbf{spectral-envelope estimation and modification} with \textbf{Python, NumPy and SciPy}, applying statistical analysis and audio signal processing.}
+
+\section{Education}
+\textbf{\color{navy}SUP'COM -- Higher School of Communications of Tunis}\hfill{\fontsize{8.8}{10}\selectfont\color{gray}2023 -- Sep 2026}\par
+National Engineering Diploma in ICT \textbar\ Specialization: Smart Image Applications. \textbf{Graduated with Tr\`es bien}; final-year project \textbf{16/20}. Focus: AI/ML, mobile networks, signal and image processing, cloud, Big Data.\par\vspace{5pt}
+\textbf{\color{navy}IPEIT -- Preparatory Institute for Engineering Studies of Tunis}\hfill{\fontsize{8.8}{10}\selectfont\color{gray}2021 -- 2023}\par
+Preparatory cycle in Mathematics and Physics; ranked \textbf{63rd / 920 (top 7\%)} in the national engineering entrance examination.
+
+\section{Certifications \& Additional Information}
+\textbf{Training:} MathWorks Machine Learning Onramp, MATLAB Onramp, Stateflow Onramp.\par\vspace{4pt}
+\textbf{Languages:} Arabic (native), French (fluent), English (fluent).\par\vspace{4pt}
+\textbf{Competitive programming:} \textbf{92} problems solved on \href{https://codeforces.com/profile/wael_melki}{Codeforces} (algorithmic problem solving).
+\end{document}
