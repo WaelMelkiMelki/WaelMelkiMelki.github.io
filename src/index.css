@@ -11,3 +11,5 @@
 
 /* Light surfaces retain depth without dark panels. */
 .project-card,.education-card,.extra-project{background:#fff;box-shadow:0 8px 28px #17203306}.portrait figcaption{background:#fff}.primary{background:#6d28d9;color:#fff}.primary:hover{background:#5b21b6}.skip-link{color:#fff}.secondary{background:#fff}.interests span,.skill-tags span{background:#fff}.mobile-menu{background:#f8fafc}.project-card:hover{box-shadow:0 12px 36px #6d28d912}
+
+.project-demo{margin:0;background:#f3f7fa;border-bottom:1px solid #64748b15}.project-demo video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#f3f7fa}.project-demo video:focus-visible{outline:3px solid #6d28d9;outline-offset:-3px}.project-demo figcaption{padding:14px 20px 17px;font-size:11px;line-height:1.7;color:#526176}.demo-label{display:block;margin-bottom:4px;font-family:Consolas,monospace;font-size:9px;letter-spacing:1.2px;color:#6d28d9}
