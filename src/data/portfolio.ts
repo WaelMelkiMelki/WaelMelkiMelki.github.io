@@ -2,7 +2,7 @@ export interface Project { id: string; title: string; category: string; descript
 export const profile = {
   name: 'Wael Melki', role: 'AI/ML Engineer | Data Science | Data Engineering',
   introduction: 'I am an ICT Engineer from SUP’COM Tunisia, passionate about designing intelligent systems and transforming data into real-world engineering solutions. My work combines machine learning, data engineering, and software development.',
-  github: 'https://github.com/WaelMelkiMelki', email: 'wael.melki@supcom.tn', linkedin: 'https://www.linkedin.com/in/wael-melki-097b56202/', resume: '/resume/Wael_Melki_CV.pdf',
+  github: 'https://github.com/WaelMelkiMelki', email: 'wael.melki@supcom.tn', linkedin: 'https://www.linkedin.com/in/wael-melki-097b56202/', certifications: 'https://www.linkedin.com/in/wael-melki-097b56202/details/certifications/', resume: '/resume/Wael_Melki_CV.pdf',
   university: 'SUP’COM — École Supérieure des Communications de Tunis', degree: 'ICT Engineering',
   interests: ['Artificial Intelligence', 'Machine Learning', 'Data Science', 'Data Engineering', 'Signal Processing', 'Embedded Systems'],
 }
